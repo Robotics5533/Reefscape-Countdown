@@ -104,8 +104,3 @@ If you wish to contribute, please follow these steps:
 
 Happy coding! 🚀
 ```
-
-### Notes:
-- Replace `yourusername/your-repo-name` with your actual GitHub username and repository name.
-- Update the **License** link if you have a custom license file.
-- Adjust or expand the **Features** and **Project Structure** sections to better fit your project's specifics.
