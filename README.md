@@ -103,4 +103,3 @@ If you wish to contribute, please follow these steps:
 ---
 
 Happy coding! 🚀
-```
