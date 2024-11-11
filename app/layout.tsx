@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import type { Viewport } from 'next'
+ 
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -26,11 +28,13 @@ const seconds = ~~((difference / 1000) % 60);
 export const metadata: Metadata = {
   title: "Reefscape Countdown",
   description: `${days}d ${hours}h ${minutes}m ${seconds}s`,
-  themeColor: "#F5E565",
   icons: {
     icon: "/reefscape.png"
   }
 };
+export const viewport: Viewport = {
+  themeColor: '#F5E565',
+}
 
 export default function RootLayout({
   children,
