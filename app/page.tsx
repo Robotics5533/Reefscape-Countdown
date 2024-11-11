@@ -11,7 +11,7 @@ export default function Component() {
   });
 
   useEffect(() => {
-    const targetDate = new Date("2025-01-04T00:00:00");
+    const targetDate = new Date("2025-01-04T12:00:00");
 
     const updateCountdown = () => {
       const now = new Date();
@@ -49,7 +49,7 @@ export default function Component() {
           {Object.entries(timeLeft).map(([unit, value]) => (
             <div key={unit} className="flex flex-col items-center">
               <span className="text-3xl sm:text-5xl font-bold">{value}</span>
-              <span className="text-lg sm:text-xl capitalize">{unit}</span>
+              <span className="text-lg sm:text-xl capitalize">{value === 1 ? unit.slice(0, -1) : unit}</span>
             </div>
           ))}
         </div>

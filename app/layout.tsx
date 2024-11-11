@@ -12,7 +12,8 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
-const targetDate = new Date("2025-01-04T00:00:00");
+const targetDate = new Date("2025-01-04T12:00:00");
+
 
 const now = new Date();
 const difference = targetDate.getTime() - now.getTime();
@@ -25,6 +26,10 @@ const seconds = ~~((difference / 1000) % 60);
 export const metadata: Metadata = {
   title: "Reefscape Countdown",
   description: `${days}d ${hours}h ${minutes}m ${seconds}s`,
+  themeColor: "#F5E565",
+  icons: {
+    icon: "/reefscape.png"
+  }
 };
 
 export default function RootLayout({
